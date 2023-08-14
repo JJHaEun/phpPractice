@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . "/../connectDB.php";
     require_once __DIR__ . "/../common/session.php";
+    require_once  __DIR__ .'/../common/checkSignSession.php';
     
     
     $surveyKind = $_POST['surveyKind'];
