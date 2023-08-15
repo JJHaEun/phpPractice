@@ -24,7 +24,7 @@
     }
 
 // JSON으로 변환하여 출력
-    $jsonData = json_encode($kindCounts);
+    $jsonData = json_encode($kindCounts,JSON_NUMERIC_CHECK); // JSON_NUMERIC_CHECK 옵션 사용(숫자부분은 문자열로 변환하지 않게함) // 배열을 그대로 json_encode()에 넣어주면 됨.
     if ($jsonData === false) {
         die("JSON encoding failed");
     }

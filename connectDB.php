@@ -11,5 +11,5 @@ if(mysqli_connect_errno()){
     echo "DB접속 실패";
     echo mysqli_connect_error();
 }else{
-    echo "접속성공";
+//    echo "접속성공";
 }
